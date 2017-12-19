@@ -21,7 +21,9 @@ export default {
  * 切换语言 
  */ 
    changeLangEvent() {
-     var r = confirm("sure to change");
+    
+    var r = confirm(this.$t('m.change'));
+    
     if (r == true) {
       if(this.lang === 'zh-CN') {
         this.lang = 'en-US';
